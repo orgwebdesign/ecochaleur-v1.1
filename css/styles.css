@@ -317,7 +317,7 @@ h4 {
 
 .hero-title {
     font-size: 3.25rem;
-    font-weight: 900;
+    font-weight: 500;
     line-height: 1.15;
     margin-bottom: 1.5rem;
     color: #111111;
@@ -776,7 +776,7 @@ h4 {
 
 .impact-price {
     font-size: 8rem;
-    font-weight: 900;
+    font-weight: 500;
     line-height: 1;
     margin: 0 0 1rem;
     text-shadow: none;
@@ -2104,7 +2104,7 @@ h4 {
     .hero-fee-badge {
         width: 100%;
         gap: 0.8rem;
-        margin-bottom: 0.4rem;
+        margin-bottom: 0;
         padding: 0.9rem 1rem;
         border-radius: 10px;
     }
