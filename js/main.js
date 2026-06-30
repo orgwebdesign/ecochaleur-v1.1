@@ -24,6 +24,7 @@ function getChatbotAnswer(message) {
 
 document.addEventListener('DOMContentLoaded', () => {
     lucide.createIcons();
+
     
     // Popup Elements
     const popupOverlay = document.getElementById('popup-overlay');
