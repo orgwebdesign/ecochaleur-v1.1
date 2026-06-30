@@ -826,8 +826,6 @@ h4 {
     background-color: #E25822;
     /* Burnt terracotta orange */
     color: #ffffff;
-    font-size: 1rem;
-    /* Smaller text as requested, prevents crowding */
     padding: 1.25rem 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
     /* Shadow makes it look clickable */
@@ -850,8 +848,6 @@ h4 {
     /* Pale mint green */
     color: #065f46;
     /* Dark green */
-    font-size: 1rem;
-    /* Smaller text as requested */
     padding: 1.25rem 2rem;
     border-radius: 8px;
     font-weight: 700;
