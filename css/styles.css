@@ -1376,14 +1376,13 @@ h4 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.5rem;
     margin-top: 2.5rem;
-    justify-items: center;
 }
 
 .benefit-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     width: 100%;
     max-width: 340px;
     padding: 1.8rem;
@@ -1392,26 +1391,23 @@ h4 {
     border-radius: 24px;
     box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
-}
-
-.benefit-card:nth-child(even) {
-    align-items: flex-start;
     text-align: left;
 }
 
-.benefit-card:nth-child(even) .benefit-header {
-    flex-direction: row;
-}
+.benefit-card:hover {
+    transform: translateY(-4px);
     box-shadow: 0 22px 60px rgba(15, 23, 42, 0.12);
     border-color: #d1d5db;
 }
 
+.benefit-card:nth-child(2) {
+    max-width: 380px;
+}
+
 .benefit-header {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 0.75rem;
+    gap: 1rem;
     margin-bottom: 1.15rem;
 }
 
@@ -1452,7 +1448,7 @@ h4 {
 .benefit-badges {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 16px;
     flex-wrap: wrap;
     margin-bottom: 1.25rem;
@@ -1482,6 +1478,7 @@ h4 {
 
 .badge-img-cee {
     background: transparent;
+    height: 60px;
 }
 
 .badge-mpr {
@@ -1495,8 +1492,14 @@ h4 {
 }
 
 .economies-figure {
-    text-align: center;
+    text-align: left;
     margin-bottom: 1.35rem;
+    width: 100%;
+}
+
+.benefit-card-economies .economies-figure {
+    text-align: center;
+    align-self: center;
 }
 
 .economies-label {
@@ -1575,9 +1578,8 @@ h4 {
 
 .benefit-rge {
     margin-top: 1.5rem;
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
     gap: 0.65rem;
     padding: 0.75rem 1rem;
     border-radius: 14px;
@@ -1610,6 +1612,10 @@ h4 {
         padding: 1.25rem;
     }
 
+    .benefit-card:nth-child(2) {
+        max-width: none;
+    }
+
     .benefit-header {
         gap: 0.75rem;
     }
@@ -1630,6 +1636,10 @@ h4 {
 
     .benefit-list {
         gap: 0.65rem;
+    }
+
+    .badge-img-cee {
+        height: 74px;
     }
 
     .economies-figure strong {
